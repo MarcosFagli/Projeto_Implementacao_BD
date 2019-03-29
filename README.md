@@ -1,4 +1,4 @@
-# Projeto para a disciplina Projeto e Implementação de Bando de dados
+# Contagem Operacao Natal
 
 Projeto semestral da disciplina Projeto e implementação de banco de dados para o projeto de extensão Operação Natal na Universidade Federal de São Carlos - SP - Brasil
 
@@ -7,6 +7,8 @@ Projeto semestral da disciplina Projeto e implementação de banco de dados para
 Projeto e Disciplina orientada pela Professora Doutora Marcela Xavier: https://bv.fapesp.br/pt/pesquisador/33880/marcela-xavier-ribeiro/
 
 ## Programas e instalação
+
+Este projeto foi realizado, executado e testado no linux Mint 4.15 x64 e linux ubuntu 4.18 x64 
 
 ### TerraER
 
@@ -23,6 +25,17 @@ Uma vez realizado o download através do link acima, basta executar no terminal 
 ```
 java -jar TerraER.13.jar
 ```
+
+### PostgreSQL
+
+O SGBD (sistema gerenciador de banco de dados) utilizado na disciplina é o PostgreSQL.
+Instruções para download e execução podem ser encontrados no seguinte link:
+
+```
+https://www.postgresql.org/download/
+```
+
+Qualquer dúvida, contate os colaboradores deste projeto :)
 
 
 ## Descrição do projeto

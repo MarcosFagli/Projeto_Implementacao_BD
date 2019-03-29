@@ -1,4 +1,4 @@
-Produto(*CodBarras, Tipo, Nome, Marca, UnidadeMedida, Volume, Massa, Unidades)
+Produto(*CodBarras, Tipo, Nome, Marca, UnidadeMedida, valorMedida)
 
 InstArrecadação(*CodInst)
 
