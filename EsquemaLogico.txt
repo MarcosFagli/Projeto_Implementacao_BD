@@ -1,0 +1,13 @@
+Produto(*CodBarras, Tipo, Nome, Marca, UnidadeMedida, Volume, Massa, Unidades)
+
+InstArrecadação(*CodInst)
+
+Mercado(*CodMerc, CodInst, Nome, EndCidade, EndBairro, EndRua, EndNumero)
+CodInst Ref InstArrecadação{CodIn}
+
+Bairro(*CodBairro, CodInst, Bairro)
+CodInst Ref InstArrecadação{CodIn}
+
+Possui(*CodMerc, *CodBarras, Preco)
+CodMerc Ref Mercado{CodMerc}
+CodBarras Ref Produto{CodBarras}
