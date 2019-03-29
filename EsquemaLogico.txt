@@ -3,11 +3,15 @@ Produto(*CodBarras, Tipo, Nome, Marca, UnidadeMedida, Volume, Massa, Unidades)
 InstArrecadação(*CodInst)
 
 Mercado(*CodMerc, CodInst, Nome, EndCidade, EndBairro, EndRua, EndNumero)
-CodInst Ref InstArrecadação{CodIn}
+CodInst Ref InstArrecadação{CodInst}
 
 Bairro(*CodBairro, CodInst, Bairro)
-CodInst Ref InstArrecadação{CodIn}
+CodInst Ref InstArrecadação{CodInst}
 
-Possui(*CodMerc, *CodBarras, Preco)
+Custa(*CodMerc, *CodBarras, Preco)
 CodMerc Ref Mercado{CodMerc}
 CodBarras Ref Produto{CodBarras}
+
+CampanhaArrecadacao(*CodBarras, *CodInst, *Data, Quantidade)
+CodBarras ref Produto{CodBarras}
+CodInst ref InstArrecadacao{CodInst}
