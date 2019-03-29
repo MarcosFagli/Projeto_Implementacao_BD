@@ -8,7 +8,7 @@ Projeto e Disciplina orientada pela Professora Doutora Marcela Xavier: https://b
 
 ## Programas e instalação
 
-###TerraER
+### TerraER
 
 An Academic Tool for Entity-Relationship (ER) models
 "An open-source modeling tool designed to support students in the creation of ER models that reflect exactly the data modeling concepts learned in the classroom."
