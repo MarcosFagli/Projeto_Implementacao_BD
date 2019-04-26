@@ -12,6 +12,6 @@ Custa(*CodMerc, *CodBarras, Preco)
 CodMerc Ref Mercado{CodMerc}
 CodBarras Ref Produto{CodBarras}
 
-CampanhaArrecadacao(*CodBarras, *CodInst, *Data, Quantidade)
+CampanhaArrecadaca(*CodBarras, *CodInst, *Data, Quantidade)
 CodBarras ref Produto{CodBarras}
 CodInst ref InstArrecadacao{CodInst}

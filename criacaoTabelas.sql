@@ -13,35 +13,67 @@ CREATE DATABASE contagem_natal
 
 CREATE TABLE produto
 (
-	codBarras VARCHAR2(13) PRIMARY KEY,
-	tipo VARCHAR2(10) NOT NULL,
-	nome VARCHAR2(25) NOT NULL,
-	marca VARCHAR2(20), 
-	unidadeMedida VARCHAR2(5) NOT NULL,
-	valorMedida DOUBLE NOT NULL
+	codBarras VARCHAR(13) PRIMARY KEY,
+	tipo VARCHAR(10) NOT NULL,
+	nome VARCHAR(25) NOT NULL,
+	marca VARCHAR(20), 
+	unidadeMedida VARCHAR(5) NOT NULL,
+	valorMedida REAL NOT NULL
 );
 
 CREATE TABLE instArrecadacao
 (
-	codInst INT NOT NULL AUTO_INCREMENT,
+	codInst SERIAL,
 	PRIMARY KEY (codInst)
 );
 
 CREATE TABLE mercado
 (
-	codMerc INT NOT NULL AUTO_INCREMENT,
+	codMerc SERIAL,
 	codInst INT NOT NULL,
-	nome VARCHAR2(15) NOT NULL,
-	endCidade VARCHAR2(30) NOT NULL,
-	endBairro VARCHAR2(15) NOT NULL,
-	endRua VARCHAR2(30),
+	nome VARCHAR(15) NOT NULL,
+	endCidade VARCHAR(30) NOT NULL,
+	endBairro VARCHAR(15) NOT NULL,
+	endRua VARCHAR(30),
 	endNumero SMALLINT,
 	
 	PRIMARY KEY (codMerc),
-	FOREIGN KEY (codInst)
+	FOREIGN KEY (codInst) REFERENCES instArrecadacao (codInst)
 );
 
 	
+CREATE TABLE bairro
+(
+	codBairro SERIAL,
+	codInst INT NOT NULL,
+	endCidade VARCHAR(30) NOT NULL,
+	endBairro VARCHAR(15) NOT NULL,
+	
+	PRIMARY KEY (codBairro),
+	FOREIGN KEY (codInst) REFERENCES instArrecadacao (codInst)
+);
 	
 
-	
+CREATE TABLE custa
+(
+	codMerc INT NOT NULL,
+	codBarras VARCHAR(13) NOT NULL,
+	preco INT NOT NULL,
+
+	PRIMARY KEY (codMerc, codBarras),
+	FOREIGN KEY (codMerc) REFERENCES mercado (codMerc),
+	FOREIGN KEY (codBarras) REFERENCES produto (codBarras)
+);
+
+
+CREATE TABLE campanhaArrecadacao
+(
+	codBarras VARCHAR(13) NOT NULL,
+	codInst INT NOT NULL,
+	data DATE NOT NULL DEFAULT CURRENT_DATE,
+	quantidade INT NOT NULL,
+
+	PRIMARY KEY (codBarras, codInst, data),
+	FOREIGN KEY (codInst) REFERENCES instArrecadacao (codInst),
+	FOREIGN KEY (codBarras) REFERENCES produto (codBarras)
+);
