@@ -35,6 +35,33 @@ Instruções para download e execução podem ser encontrados no seguinte link:
 https://www.postgresql.org/download/
 ```
 
+### Pandas
+
+In computer programming, pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. It is free software released under the three-clause BSD license. The name is derived from the term "panel data", an econometrics term for data sets that include observations over multiple time periods for the same individuals.
+
+Fonte: https://en.wikipedia.org/wiki/Pandas_(software)
+
+Esta biblioteca é utilizada para separar os dados do excel na qual foram fornecidos os dados utilizados para os produtos.
+
+Para a instalação no terminal python, basta executar (este comando já deve baixar ou atualizar a biblioteca xlrd)
+
+```
+sudo -H pip3 install -- upgrade pandas
+```
+
+Um método alternativo, sem a utilização do sudo (não funcionou no nosso, mas ta ai, segundo a mãe internet):
+
+```
+pip3 install pandas --user
+```
+
+... e neste caso, instalar a dependencia xlrd
+
+```
+pip3 install xlrd
+```
+
+
 Qualquer dúvida, contate os colaboradores deste projeto :)
 
 
