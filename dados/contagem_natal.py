@@ -1,11 +1,5 @@
 import pandas as pd
 
-class product:
-    nome = ''
-    tipoUnidade = ''
-    valorUnidade = 0.0
-    codBarras = ''
-
 def detectarMedidaeUnidade(string):
     listUnit = ["LATA", 'KG', 'UN', "ML", "L", "G"]
 
@@ -40,19 +34,23 @@ def main():
         retorno = detectarMedidaeUnidade(j)
 
         temp =[]
-        temp.append(retorno[2])
-        temp.append(retorno[1])
-        temp.append(retorno[0])
-        temp.append(cb[count])
+        temp.append(retorno[2])     #Nome do produto
+        temp.append(retorno[1])     #Tipo da unidade
+        temp.append(retorno[0])     #Valor unidade
+        temp.append(cb[count])      #Codigo de barras
         count += 1
 
-        item.append(temp)
+        if(len(temp[3]) == 13):
+            item.append(temp)
+
+    del(item[0])
 
     file = open('DadosNormalizados.txt', 'w')
     for i in item:
         file.write(i[0] + "," + i[1] + "," + str(i[2]) + "," + i[3] + "\n")
     file.close
 
+    print("That's all folks")
     print("Thanks =)")
 
 

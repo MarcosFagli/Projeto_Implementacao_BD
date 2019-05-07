@@ -17,8 +17,8 @@ CREATE TABLE produto
 	tipo VARCHAR(10) NOT NULL,
 	nome VARCHAR(25) NOT NULL,
 	marca VARCHAR(20), 
-	unidadeMedida VARCHAR(5) NOT NULL,
-	valorMedida REAL NOT NULL
+	unidadeMedida VARCHAR(5),
+	valorMedida REAL
 );
 
 CREATE TABLE instArrecadacao
