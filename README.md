@@ -81,3 +81,6 @@ No arquivo DEER.xml, é possível visualizar o diagrama que será seguido para e
 ## Esquema Lógico
 
 O esquema lógico é o mapeamento do DEER para iniciar e facilitar a criação das tabelas no banco de dados. No arquivo EsquemaLogico.txt é possivel visualizar este mapeamento (arquivo .txt).
+
+
+Teste
