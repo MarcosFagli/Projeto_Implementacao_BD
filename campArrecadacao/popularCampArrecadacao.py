@@ -16,7 +16,12 @@ def popularProdutos(produtos):
     file = open("popularCampArrecadacao.sql", 'w')
 
     for i in range(0,7000):
-        file.write("INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES (\'" + produtos[random.randint(0,len(produtos)-1)][3] + "\'," + str(random.randint(0,25)) + "," + str(random.randint(0,5)) + ");\n")
+        if(random.random() < 0.5):
+            campArre = random.randint[50,239]
+        else:
+            campArre = random.randint[13,23]
+
+        file.write("INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES (\'" + produtos[random.randint(0,len(produtos)-1)][3] + "\'," + campArre + "," + str(random.randint(0,5)) + ");\n")
        
     file.close()
 
