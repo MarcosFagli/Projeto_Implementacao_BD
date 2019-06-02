@@ -17,11 +17,11 @@ def popularProdutos(produtos):
 
     for i in range(0,7000):
         if(random.random() < 0.5):
-            campArre = random.randint[50,239]
+            campArre = random.randint(50,239)
         else:
-            campArre = random.randint[13,23]
+            campArre = random.randint(13,23)
 
-        file.write("INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES (\'" + produtos[random.randint(0,len(produtos)-1)][3] + "\'," + campArre + "," + str(random.randint(0,5)) + ");\n")
+        file.write("INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES (\'" + produtos[random.randint(0,len(produtos)-1)][3] + "\'," + str(campArre) + "," + str(random.randint(0,5)) + ");\n")
        
     file.close()
 

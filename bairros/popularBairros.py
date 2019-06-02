@@ -14,7 +14,7 @@ def popularBairros(bairros):
     file = open("populadorBairros.sql", 'w')
 
     for bairro in bairros:
-        file.write("INSERT INTO bairro (nome) VALUES (\'" + bairro + "\');\n")
+        file.write("select insertbairro(\'" + bairro + "\');\n")
        
     file.close()
 
