@@ -21,7 +21,7 @@ def popularProdutos(produtos):
         else:
             campArre = random.randint(13,23)
 
-        file.write("INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES (\'" + produtos[random.randint(0,len(produtos)-1)][3] + "\'," + str(campArre) + "," + str(random.randint(0,5)) + ");\n")
+        file.write("INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade, data) VALUES (\'" + produtos[random.randint(0,len(produtos)-1)][3] + "\'," + str(campArre) + "," + str(random.randint(0,500)) + ",\'2019-05-" + str(random.randint(10,30)) + "\');\n")
        
     file.close()
 
