@@ -123,7 +123,7 @@ CREATE TABLE campanhaArrecadacao
     data DATE NOT NULL DEFAULT CURRENT_DATE,
     quantidade INT NOT NULL,
 
-    PRIMARY KEY (codBarras, codInst, data),
+    PRIMARY KEY (codBarras, codInst, data, quantidade),
     FOREIGN KEY (codInst) REFERENCES instArrecadacao (codInst),
     FOREIGN KEY (codBarras) REFERENCES produto (codBarras)
 );
@@ -135,7 +135,6 @@ CREATE TABLE campanhaArrecadacao
 
 -- ---------------------------------------------------------------------
 -- Criação de Procedures
-
 
 
 -- ---------------------------------------------------------------------
@@ -215,6 +214,68 @@ SELECT nome FROM produto;
 SELECT nome, tipo, codBarras, unidadeMedida 
 	FROM produto
 	WHERE codBarras = '7898009350317';
+
+
+-- Select com a quantidade de bolacha em uma arrecadação
+SELECT count(c.quantidade) 
+	FROM campanhaArrecadacao c 
+	JOIN produto p ON p.codBarras = c.codBarras 
+	WHERE p.nome = 'BOLACHA'; 
+
+
+-- Explain 1
+EXPLAIN ANALYZE SELECT nome, tipo, codBarras, unidadeMedida
+FROM produto
+WHERE codBarras = '7898009350317';
+
+-- Resultado
+-- "Index Scan using produto_pkey on produto  (cost=0.28..8.29 rows=1 width=35) (actual time=0.024..0.025 rows=1 loops=1)"
+-- "  Index Cond: ((codbarras)::text = '7898009350317'::text)"
+-- "Planning Time: 0.067 ms"
+-- "Execution Time: 0.043 ms"
+
+
+-- Explain 2 - Execução 1
+EXPLAIN ANALYZE SELECT count(c.quantidade) 
+	FROM campanhaArrecadacao c 
+	JOIN produto p ON p.codBarras = c.codBarras 
+	WHERE p.nome = 'BOLACHA'; 
+
+-- Resultado
+-- "        Hash Cond: ((c.codbarras)::text = (p.codbarras)::text)"
+-- "        ->  Seq Scan on campanhaarrecadacao c  (cost=0.00..56.25 rows=2125 width=18) (actual time=0.033..0.192 rows=2125 loops=1)"
+-- "        ->  Hash  (cost=20.52..20.52 rows=97 width=14) (actual time=0.100..0.100 rows=97 loops=1)"
+-- "              Buckets: 1024  Batches: 1  Memory Usage: 13kB"
+-- "              ->  Seq Scan on produto p  (cost=0.00..20.52 rows=97 width=14) (actual time=0.015..0.087 rows=97 loops=1)"
+-- "                    Filter: ((nome)::text = 'BOLACHA'::text)"
+-- "                    Rows Removed by Filter: 825"
+-- "Planning Time: 0.382 ms"
+-- "Execution Time: 0.576 ms"
+
+
+-- Indices
+CREATE INDEX idx_campanha ON campanhaArrecadacao (codInst);
+
+
+-- Explain 1 - Execução 2
+-- "Index Scan using produto_pkey on produto  (cost=0.28..8.29 rows=1 width=35) (actual time=0.043..0.045 rows=1 loops=1)"
+-- "  Index Cond: ((codbarras)::text = '7898009350317'::text)"
+-- "Planning Time: 0.139 ms"
+-- "Execution Time: 0.068 ms"
+
+
+-- Explain 2 - Execução 2
+-- "Aggregate  (cost=84.15..84.16 rows=1 width=8) (actual time=0.662..0.662 rows=1 loops=1)"
+-- "  ->  Hash Join  (cost=21.74..83.59 rows=224 width=4) (actual time=0.226..0.642 rows=241 loops=1)"
+-- "        Hash Cond: ((c.codbarras)::text = (p.codbarras)::text)"
+-- "        ->  Seq Scan on campanhaarrecadacao c  (cost=0.00..56.25 rows=2125 width=18) (actual time=0.025..0.155 rows=2125 loops=1)"
+-- "        ->  Hash  (cost=20.52..20.52 rows=97 width=14) (actual time=0.185..0.185 rows=97 loops=1)"
+-- "              Buckets: 1024  Batches: 1  Memory Usage: 13kB"
+-- "              ->  Seq Scan on produto p  (cost=0.00..20.52 rows=97 width=14) (actual time=0.020..0.167 rows=97 loops=1)"
+-- "                    Filter: ((nome)::text = 'BOLACHA'::text)"
+-- "                    Rows Removed by Filter: 825"
+-- "Planning Time: 0.733 ms"
+-- "Execution Time: 0.722 ms"
 
 
 -- -------------------------------------------------------------------------------------------------------------------------------------

@@ -94,7 +94,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789766
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898930141084',163,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7506339391329',15,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896040703710',19,3);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896102593051',21,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896183302429',179,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891107101621',117,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891150024823',16,1);
@@ -106,10 +105,8 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789830
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891037006324',157,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896022200572',85,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896569405027',23,3);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('4005900521897',15,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891150048478',18,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('8480017496201',63,1);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896069511297',21,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891000919705',75,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896733600050',15,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896098900277',186,2);
@@ -152,7 +149,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789655
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891150057630',16,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896314707697',128,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896200115346',14,4);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896022200626',18,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896183300319',100,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896292300545',124,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896090100026',151,3);
@@ -293,7 +289,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789690
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898080640185',13,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896005271377',16,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896110100029',229,0);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896200031172',21,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896048284648',223,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896527700768',186,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898215151685',202,4);
@@ -387,7 +382,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789890
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896080900148',14,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891150021242',93,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891024038536',232,1);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898116880066',23,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896005286555',205,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7893500018483',156,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896615213002',125,1);
@@ -395,10 +389,8 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789605
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896085000607',205,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896072005080',18,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7892300026629',18,5);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896043350515',62,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891022639001',130,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896058251241',75,5);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891150048478',18,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7893500020318',117,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891962035505',201,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891962014999',19,2);
@@ -542,7 +534,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789600
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896003703061',183,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896098900956',18,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898080641311',172,2);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891168100014',23,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896622713021',16,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896110094694',171,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896003706536',19,2);
@@ -580,7 +571,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789609
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896022200480',163,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891024026434',58,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7894650004494',20,5);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898045701111',18,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7897664110304',13,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891962000268',70,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896110005638',16,4);
@@ -665,7 +655,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789604
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896006715153',128,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898341430777',70,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891024029817',16,4);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896622711911',21,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896098900857',16,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7500435121736',197,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896334200550',129,5);
@@ -695,12 +684,10 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789751
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891038009300',13,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896048284648',236,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896012800836',14,2);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898342050240',22,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896080866130',200,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7500435011266',216,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896314707697',182,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896098901717',175,2);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896005286524',238,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7897217400296',95,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896056406001',169,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896534400200',174,3);
@@ -758,7 +745,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789890
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896040704625',20,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896056405233',188,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896090403141',20,2);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891024036839',20,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7897900314008',187,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896022205232',13,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891000247785',18,0);
@@ -799,7 +785,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789465
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896022200121',194,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7806500773405',224,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896098900277',215,4);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898342050240',22,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898080641298',14,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896256050158',116,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896026839242',19,3);
@@ -1016,7 +1001,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789120
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891024039243',57,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891035800344',208,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891150024809',17,2);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896205722211',93,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891150024823',15,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891010921293',230,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898957777068',19,3);
@@ -1074,7 +1058,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789608
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891010793463',16,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898949924197',121,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891010877989',128,1);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896733600050',15,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896085052002',20,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898215151692',106,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896022201906',19,0);
@@ -1118,7 +1101,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789652
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896036096062',80,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896733600128',203,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896051130093',179,2);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896094906471',21,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891242211308',171,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896098900857',106,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891010087722',17,0);
@@ -1165,7 +1147,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789100
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7897136323331',72,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7894321811789',50,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896083800155',205,5);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7892300026629',17,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896205755349',19,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896674700017',235,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896075300946',204,1);
@@ -1255,7 +1236,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789632
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896706303834',197,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896110003900',21,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7506195132043',71,2);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898045701111',22,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896733600746',19,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891010087722',58,4);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7898925255208',18,2);
@@ -1397,7 +1377,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789610
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7897664171756',13,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896005208151',15,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7892020200095',145,3);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896022200626',17,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891150045163',140,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896615213002',77,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891150060289',135,1);
@@ -2144,7 +2123,6 @@ INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('789115
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896043350515',21,1);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896098906866',76,3);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891528020600',177,5);
-INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891024132128',15,2);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7891095200467',105,5);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7500435127370',18,0);
 INSERT INTO campanhaArrecadacao (codBarras, codInst, quantidade) VALUES ('7896273900023',187,5);
