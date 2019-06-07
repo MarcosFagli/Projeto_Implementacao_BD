@@ -118,12 +118,13 @@ DROP TABLE campanhaArrecadacao;
 
 CREATE TABLE campanhaArrecadacao
 (
+	codArrecadacao SERIAL,
     codBarras VARCHAR(13) NOT NULL,
     codInst INT NOT NULL,
-    data DATE NOT NULL DEFAULT CURRENT_DATE,
+    data DATE DEFAULT CURRENT_DATE,
     quantidade INT NOT NULL,
 
-    PRIMARY KEY (codBarras, codInst, data, quantidade),
+    PRIMARY KEY (codArrecadacao, codBarras, codInst),
     FOREIGN KEY (codInst) REFERENCES instArrecadacao (codInst),
     FOREIGN KEY (codBarras) REFERENCES produto (codBarras)
 );
@@ -241,22 +242,22 @@ EXPLAIN ANALYZE SELECT count(c.quantidade)
 	JOIN produto p ON p.codBarras = c.codBarras 
 	WHERE p.nome = 'BOLACHA'; 
 
--- Resultado
--- "Aggregate  (cost=164.04..164.05 rows=1 width=8) (actual time=2.081..2.081 rows=1 loops=1)"
--- "  ->  Hash Join  (cost=21.74..162.20 rows=736 width=4) (actual time=0.164..1.980 rows=727 loops=1)"
+-- "Aggregate  (cost=164.04..164.05 rows=1 width=8) (actual time=3.095..3.096 rows=1 loops=1)"
+-- "  ->  Hash Join  (cost=21.74..162.20 rows=736 width=4) (actual time=0.346..2.955 rows=727 loops=1)"
 -- "        Hash Cond: ((c.codbarras)::text = (p.codbarras)::text)"
--- "        ->  Seq Scan on campanhaarrecadacao c  (cost=0.00..122.00 rows=7000 width=18) (actual time=0.016..0.726 rows=7000 loops=1)"
--- "        ->  Hash  (cost=20.52..20.52 rows=97 width=14) (actual time=0.124..0.124 rows=97 loops=1)"
+-- "        ->  Seq Scan on campanhaarrecadacao c  (cost=0.00..122.00 rows=7000 width=18) (actual time=0.022..0.955 rows=7000 loops=1)"
+-- "        ->  Hash  (cost=20.52..20.52 rows=97 width=14) (actual time=0.311..0.311 rows=97 loops=1)"
 -- "              Buckets: 1024  Batches: 1  Memory Usage: 13kB"
--- "              ->  Seq Scan on produto p  (cost=0.00..20.52 rows=97 width=14) (actual time=0.019..0.110 rows=97 loops=1)"
+-- "              ->  Seq Scan on produto p  (cost=0.00..20.52 rows=97 width=14) (actual time=0.039..0.280 rows=97 loops=1)"
 -- "                    Filter: ((nome)::text = 'BOLACHA'::text)"
 -- "                    Rows Removed by Filter: 825"
--- "Planning Time: 0.823 ms"
--- "Execution Time: 2.134 ms"
+-- "Planning Time: 0.601 ms"
+-- "Execution Time: 3.140 ms"
 
 
 -- Indices
-CREATE INDEX idx_campanha ON campanhaArrecadacao (codInst);
+CREATE INDEX idx_campanha ON campanhaArrecadacao (CodBarras);
+CREATE INDEX idx_produto ON produto (CodBarras);
 
 
 -- Explain 1 - Execução 2
@@ -267,17 +268,17 @@ CREATE INDEX idx_campanha ON campanhaArrecadacao (codInst);
 
 
 -- Explain 2 - Execução 2
--- "Aggregate  (cost=164.04..164.05 rows=1 width=8) (actual time=2.077..2.077 rows=1 loops=1)"
--- "  ->  Hash Join  (cost=21.74..162.20 rows=736 width=4) (actual time=0.294..1.964 rows=727 loops=1)"
+-- "Aggregate  (cost=164.04..164.05 rows=1 width=8) (actual time=1.605..1.605 rows=1 loops=1)"
+-- "  ->  Hash Join  (cost=21.74..162.20 rows=736 width=4) (actual time=0.142..1.549 rows=727 loops=1)"
 -- "        Hash Cond: ((c.codbarras)::text = (p.codbarras)::text)"
--- "        ->  Seq Scan on campanhaarrecadacao c  (cost=0.00..122.00 rows=7000 width=18) (actual time=0.016..0.604 rows=7000 loops=1)"
--- "        ->  Hash  (cost=20.52..20.52 rows=97 width=14) (actual time=0.265..0.265 rows=97 loops=1)"
+-- "        ->  Seq Scan on campanhaarrecadacao c  (cost=0.00..122.00 rows=7000 width=18) (actual time=0.018..0.547 rows=7000 loops=1)"
+-- "        ->  Hash  (cost=20.52..20.52 rows=97 width=14) (actual time=0.118..0.118 rows=97 loops=1)"
 -- "              Buckets: 1024  Batches: 1  Memory Usage: 13kB"
--- "              ->  Seq Scan on produto p  (cost=0.00..20.52 rows=97 width=14) (actual time=0.021..0.227 rows=97 loops=1)"
+-- "              ->  Seq Scan on produto p  (cost=0.00..20.52 rows=97 width=14) (actual time=0.018..0.104 rows=97 loops=1)"
 -- "                    Filter: ((nome)::text = 'BOLACHA'::text)"
 -- "                    Rows Removed by Filter: 825"
--- "Planning Time: 0.886 ms"
--- "Execution Time: 2.122 ms"
+-- "Planning Time: 0.579 ms"
+-- "Execution Time: 1.637 ms"
 
 -- -------------------------------------------------------------------------------------------------------------------------------------
 -- Inserções
